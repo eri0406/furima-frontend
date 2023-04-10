@@ -11,9 +11,6 @@ const List = () =>  {
      .then(res => {
        setItems(res.data) 
      })
-     .catch(error =>{
-      console.log(error)
-     })
    },[])
 
 return(

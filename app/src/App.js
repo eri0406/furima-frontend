@@ -6,7 +6,6 @@ import Footer from './components/Footer';
 
 
 const App = () => (
-
   <div>
     <Header />
     <List  /> 

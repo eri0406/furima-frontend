@@ -40,8 +40,8 @@ return(
 
 <div className='headerTitle'>
   <h2 className='headerMain'>人生を変えるフリマアプリ</h2>
-    <p className='headerSub'>FURIMAは誰でも出品・購入ができる</p>
-    <p className='headerSub'>フリマアプリです</p>
+  <p className='headerSub'>FURIMAは誰でも出品・購入ができる</p>
+  <p className='headerSub'>フリマアプリです</p>
 </div>
 
 <div className='selectReason'>
