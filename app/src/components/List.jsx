@@ -1,23 +1,11 @@
 // import applyCaseMiddleware from 'axios-case-converter';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
-// import React from 'react';
 
-
-// const options =  {
-//   ignoreHeaders: true,
-// };
-
-// const List = applyCaseMiddleware(
-//   axios.create({
-//     baseURL: 'http://localhost:3000/items',
-//   }),
-//   options
-// );
 
 const List = () =>  {
 
-  const [items, setItems] = useState([]) ;
+  const [items, setItems] = useState([]);
 
    useEffect(() => {
      axios.get('http://localhost:3001/items')
@@ -30,24 +18,22 @@ const List = () =>  {
      })
    },[])
 
-
 return(
   <>
   <div className='itemContents'>
     <h3 className='itemTitle'>ピックアップカテゴリ</h3>
-    <div className='subTitle'>新規投稿商品
-      <ul>
+    <h4 className='subTitle'>新規投稿商品</h4>
+      <ul className='indexItem'>
         {
           items.map((item) => <li key={item.id}>
-            {item.image}
-            {item.name}
-            {item.price}
-            {item.load_id}
+            <img src={item.image_url} />
+            <p>{item.name}</p>
+            <p>{item.price}円</p>
+            <p>{item.load_id}</p>
             </li>)
         }
       </ul>
     </div>
-  </div>
   </>
   );
 }
@@ -57,3 +43,5 @@ export default List;
 // export default List = () => {
 //   return List.get('/items');
 // };
+
+// alt="" width="250" height="300"
