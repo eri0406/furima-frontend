@@ -21,7 +21,7 @@ return(
       <ul className='indexItem'>
         {
           items.map((item) => <li key={item.id}>
-            <img src={item.image_url} />
+            <img src={item.image_url} alt="" />
             <p>{item.name}</p>
             <p>{item.price}円</p>
             <p>{item.load_name}</p>

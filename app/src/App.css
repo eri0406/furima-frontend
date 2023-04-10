@@ -195,7 +195,6 @@ p {
   font-size: 15px;
 }
 
-
 /* footer */
 
 .footer {
@@ -220,4 +219,9 @@ p {
   color: #fff;
   font-size: 12px;
   line-height: 30px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 15px;
 }

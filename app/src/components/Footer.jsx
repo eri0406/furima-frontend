@@ -21,9 +21,9 @@ const Footer = () => {
         </li>
       </ul>
   </div>
-    <p className='footerComp'>
+    <h5 className='footerComp'>
         ©︎ FURIMA
-    </p>
+    </h5>
 </div>
   </>
   );
