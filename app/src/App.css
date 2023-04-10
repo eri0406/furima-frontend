@@ -14,9 +14,8 @@
 
 .leftHeaderName{
   font-size: 30px;
-  color:#3399FF;
+  color: #3399FF;
 }
-
 
 .inputForm {
   width: 50vw;
@@ -40,7 +39,7 @@
   padding: 8px;
 }
 
-.fa-solid-magnifying-glass {
+.fa-solid-Magnifying-Glass {
   width: 4vh;
   color: white;
   font-size: 2vh;

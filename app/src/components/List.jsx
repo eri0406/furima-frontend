@@ -1,4 +1,3 @@
-// import applyCaseMiddleware from 'axios-case-converter';
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
@@ -10,7 +9,6 @@ const List = () =>  {
    useEffect(() => {
      axios.get('http://localhost:3001/items')
      .then(res => {
-       console.log(res.data)
        setItems(res.data) 
      })
      .catch(error =>{
@@ -29,7 +27,7 @@ return(
             <img src={item.image_url} />
             <p>{item.name}</p>
             <p>{item.price}円</p>
-            <p>{item.load_id}</p>
+            <p>{item.load_name}</p>
             </li>)
         }
       </ul>
@@ -39,9 +37,3 @@ return(
 }
 
 export default List;
-
-// export default List = () => {
-//   return List.get('/items');
-// };
-
-// alt="" width="250" height="300"
