@@ -11,7 +11,7 @@ return(
     <form className="inputForm" action="#">
       <input className="inputBox" type="text" placeholder="キーワードから探す"></input>
         <button className="inputBtn">
-          <i className="magnifying-glass" class="fa-Solid-Magnifying-Glass">検 索</i>
+          <i className="magnifyingGlass" class="faSolidMagnifyingGlass">検 索</i>
         </button>
     </form>
 </div>
