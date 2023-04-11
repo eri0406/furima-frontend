@@ -1,38 +1,227 @@
-.App {
+
+* {
+  box-sizing: border-box;
+}
+
+/* header */
+.topHeader {
+  width: 100vw;
+  padding: 2vh 15vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.leftHeaderName{
+  font-size: 30px;
+  color: #3399FF;
+}
+
+.inputForm {
+  width: 50vw;
+  height: 4vh;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.inputForm>.inputBox {
+  width: 100%;
+  height: 5vh;
+  padding-left: 10px;
+}
+
+.inputBtn {
+  width: 5vw;
+  height: 5vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #99CCFF;
+  padding: 8px;
+}
+
+.magnifyingGlass {
+  width: 4vh;
+  color: white;
+  font-size: 2vh;
+}
+
+.nav {
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1vh 0;
+  color: black;
+}
+
+.leftLink{
+  display: flex;
+  min-width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.leftList {
+  margin-right: 5vw;
+  font-size: 18px;
+}
+
+.rightLink {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.rightList {
+  line-height: 32px;
+  margin-right: 5vw;
+  font-size: 18px;
+}
+
+.headerTitle{
+  width: 100vw;
+  background-image: url(../public/images/furima.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 15vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(0 0 0 / 90%);
+}
+
+.headerMain {
+  font-size: 8vh;
+}
+
+.headerSub {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+.selectReasonLists {
+  padding: 5vh 15vw;
+}
+
+.listsTitle {
   text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.listContents {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.selectReason>.listContents::after {
+  content: '';
+  width: 70px;
+  height: 4px;
+  background-color: #3ccace;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contentList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contentLists>.list {
+  width: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+
+/* List*/
+
+.itemContents {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 20vh;
+  width: 100vw;
+}
+
+.itemContents>.itemTitle {
+  font-size: 5vh;
+  font-weight: bold;
+}
+
+.itemContents>.subtitle {
+  font-size: 5vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.indexItem {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+img {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  margin: 0 30px 0;
+  list-style: none;
+}
+
+p {
+  text-align: left;
+  font-size: 15px;
+}
+
+/* footer */
+
+.footer {
+  width: 100vw;
+  padding: 5vh 0;
+  color: #fff;
+  background-color: #272727;
+  text-align: center;
+}
+
+.footerContents {
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+.footerContent {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footerLink {
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+}
+
+h5 {
+  text-align: center;
+  font-size: 15px;
 }
